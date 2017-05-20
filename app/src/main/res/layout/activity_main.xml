@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.sorashiro.kotlintest.MainActivityOrigin">
+
+
+    <TextView
+        android:id="@+id/text_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:text="@string/hello_world"
+        android:textSize="22sp"
+        android:textColor="@color/black_primary_text"
+        android:layout_centerHorizontal="true"/>
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@id/text_title"
+        android:background="@color/black_secondary_text"/>
+
+
+    <TextView
+        android:id="@+id/text_weather"
+        android:layout_width="match_parent"
+        android:layout_margin="20dp"
+        android:layout_height="200dp"
+        android:textColor="@color/black_secondary_text"
+        android:layout_alignParentBottom="true"
+        android:text="Click to get city's weather :)"
+        />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_above="@id/text_weather"
+        android:background="@color/black_secondary_text"/>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/list_weather"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/text_title"
+        android:layout_above="@id/text_weather"
+        />
+
+
+
+</RelativeLayout>
