@@ -4,6 +4,10 @@
 
 使用的开源库：Anko | Gson 。
 
+参考书籍：
+《Kotlin for Android Developers》
+《Kotlin Doc》
+
 [点我下载APK](https://raw.githubusercontent.com/Sora-Shiro/KotlinWeather/blob/master/extra/KotlinTest.apk)
 
 Use Kotlin.
@@ -11,6 +15,10 @@ Use Kotlin.
 Can get some weather information.
 
 Use ```Anko and Gson```.
+
+Reference books:
+《Kotlin for Android Developers》
+《Kotlin Doc》
 
 [Click me to Download APK](https://raw.githubusercontent.com/Sora-Shiro/KotlinWeather/blob/master/extra/KotlinTest.apk)
 
