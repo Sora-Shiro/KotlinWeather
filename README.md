@@ -4,8 +4,8 @@
 
 [点我下载APK](https://raw.githubusercontent.com/Sora-Shiro/KotlinWeather/blob/master/extra/KotlinTest.apk)
 
-A simple calculator.
-Supports four arithmetic operation, parentheses, and automatic operation.
+Use Kotlin.
+Can get some weather information.
 
 [Click me to Download APK](https://raw.githubusercontent.com/Sora-Shiro/KotlinWeather/blob/master/extra/KotlinTest.apk)
 
