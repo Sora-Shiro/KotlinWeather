@@ -8,7 +8,7 @@
 《Kotlin for Android Developers》
 《Kotlin Doc》
 
-[点我下载APK](https://raw.githubusercontent.com/Sora-Shiro/KotlinWeather/blob/master/extra/KotlinTest.apk)
+[点我下载APK](https://raw.githubusercontent.com/Sora-Shiro/KotlinWeather/master/extra/KotlinTest.apk)
 
 Use Kotlin.
 

@@ -7,8 +7,7 @@ import android.view.View
 import android.view.ViewGroup
 import android.widget.TextView
 import com.sorashiro.kotlintest.R
-
-
+import com.sorashiro.kotlintest.tools.ctx
 
 class WeatherListAdapter (val context: Context, val items: List<String>, val onItemClickListener: OnItemClickListener) :
         RecyclerView.Adapter<WeatherListAdapter.ViewHolder>() {
@@ -19,7 +18,7 @@ class WeatherListAdapter (val context: Context, val items: List<String>, val onI
     }
 
     override fun onCreateViewHolder(parent: ViewGroup?, viewType: Int): ViewHolder {
-        val itemView: View = LayoutInflater.from(context).inflate(R.layout.item_city, parent, false)
+        val itemView: View = LayoutInflater.from(parent!!.ctx).inflate(R.layout.item_city, parent, false)
         val viewHolder: ViewHolder = ViewHolder(itemView)
         return viewHolder
     }
@@ -30,13 +29,13 @@ class WeatherListAdapter (val context: Context, val items: List<String>, val onI
 
         viewHolder.textView.text = city
 
-        viewHolder.view.setOnClickListener(View.OnClickListener {
+        viewHolder.view.setOnClickListener {
             onItemClickListener.onItemClick(viewHolder.view, position, city)
-        })
-        viewHolder.view.setOnLongClickListener(View.OnLongClickListener {
+        }
+        viewHolder.view.setOnLongClickListener {
             onItemClickListener.onItemLongClick(viewHolder.view, position, city)
             true
-        })
+        }
     }
 
     override fun getItemCount(): Int {
