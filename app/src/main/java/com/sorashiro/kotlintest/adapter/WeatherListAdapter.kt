@@ -38,10 +38,7 @@ class WeatherListAdapter (val context: Context, val items: List<String>, val onI
         }
     }
 
-    override fun getItemCount(): Int {
-        return items.size
-    }
-
+    override fun getItemCount() = items.size
 
     class ViewHolder(val view: View) : RecyclerView.ViewHolder(view) {
 

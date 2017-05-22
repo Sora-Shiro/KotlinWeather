@@ -1,6 +1,8 @@
 apply plugin: 'com.android.application'
 
 apply plugin: 'kotlin-android'
+// Kotlin Android Extensions
+apply plugin: 'kotlin-android-extensions'
 
 android {
     compileSdkVersion 25
@@ -48,6 +50,6 @@ dependencies {
     // Anko Commons
     compile "org.jetbrains.anko:anko-commons:$anko_version"
 
-    //Gson
+    // Gson
     compile "com.google.code.gson:gson:2.8.0"
 }
