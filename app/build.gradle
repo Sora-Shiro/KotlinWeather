@@ -49,6 +49,8 @@ dependencies {
 
     // Anko Commons
     compile "org.jetbrains.anko:anko-commons:$anko_version"
+    // Anko SQLite
+    compile "org.jetbrains.anko:anko-sqlite:$anko_version"
 
     // Gson
     compile "com.google.code.gson:gson:2.8.0"

@@ -15,7 +15,7 @@ package com.sorashiro.kotlintest.json
  * cod : 200
  */
 
-data class CurrentWeather(
+data class CurrentWeatherJson(
         val coord: Coord,
         val weather: List<Weather>,
         val main: Main,
