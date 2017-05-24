@@ -1,5 +1,6 @@
 # KotlinWeather
 
+**测试** Kotlin 的摸鱼 App 。
 使用 Kotlin 实现的天气检测应用。
 
 使用的开源库：Anko | Gson 。
@@ -10,7 +11,7 @@
 
 [点我下载APK](https://raw.githubusercontent.com/Sora-Shiro/KotlinWeather/master/extra/KotlinTest.apk)
 
-Use Kotlin.
+Just a **test** App by using Kotlin.
 
 Can get some weather information.
 
