@@ -7,7 +7,7 @@ import android.view.View
 import android.view.ViewGroup
 import android.widget.TextView
 import com.sorashiro.kotlintest.R
-import com.sorashiro.kotlintest.tools.ctx
+import com.sorashiro.kotlintest.extension.ctx
 
 class WeatherListAdapter (val context: Context, val items: List<String>, val onItemClickListener: OnItemClickListener) :
         RecyclerView.Adapter<WeatherListAdapter.ViewHolder>() {

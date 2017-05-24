@@ -1,4 +1,4 @@
-package com.sorashiro.kotlintest.tools
+package com.sorashiro.kotlintest.extension
 
 import android.content.Context
 import android.util.Log

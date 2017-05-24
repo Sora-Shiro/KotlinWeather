@@ -10,9 +10,7 @@ import android.view.View
 import android.widget.TextView
 import com.sorashiro.kotlintest.adapter.WeatherListAdapter
 import com.sorashiro.kotlintest.tools.*
-import org.jetbrains.anko.doAsync
-import org.jetbrains.anko.find
-import org.jetbrains.anko.uiThread
+import org.jetbrains.anko.*
 import kotlin.properties.Delegates
 
 class MainActivity : AppCompatActivity(), WeatherListAdapter.OnItemClickListener{
@@ -69,11 +67,15 @@ class MainActivity : AppCompatActivity(), WeatherListAdapter.OnItemClickListener
     override fun onItemLongClick(view: View, position: Int, city: String) {
         AnimationUtil.animTwinkle(view)
 
-        val intent = Intent(this@MainActivity, DetailActivity::class.java)
-        intent.putExtra("name", city)
-        startActivity(intent)
+//        val intent = Intent(this@MainActivity, DetailActivity::class.java)
+//        intent.putExtra("name", city)
+//        startActivity(intent)
 
+        startActivity<DetailActivity>(
+                "name" to city
+        )
     }
+
 
     fun getWeatherData(city: String) {
         //Anko

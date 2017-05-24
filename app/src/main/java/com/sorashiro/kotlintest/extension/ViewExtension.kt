@@ -1,10 +1,7 @@
-package com.sorashiro.kotlintest.tools
-
-import android.content.Context
-import android.view.View
+package com.sorashiro.kotlintest.extension
 
 
-val View.ctx: Context
+val android.view.View.ctx: android.content.Context
     get() = context
 
 fun <K, V : Any> MutableMap<K, V?>.toVarargArray():
